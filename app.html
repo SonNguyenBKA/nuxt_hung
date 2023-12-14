@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie9 ie9" {{ HTML_ATTRS }}><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html {{ HTML_ATTRS }}>
+<!--<![endif]-->
+
+<head {{ HEAD_ATTRS }}>
+
+  {{ HEAD }}
+</head>
+
+<body {{ BODY_ATTRS }}>
+  {{ APP }}
+</body>
+
+</html>
+<script>
+  const w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+  const h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+  document.body.style.width = w
+  document.body.style.height = h
+</script>
